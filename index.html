@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Account Deletion – Your App Name</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --secondary: #22c55e;
+      --bg: #f9fafb;
+      --text: #111827;
+      --muted: #6b7280;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #eef2ff, #ffffff);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      height: 80px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+
+    .step {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .step-number {
+      width: 36px;
+      height: 36px;
+      background: var(--primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .store-btn {
+      padding: 14px 22px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .store-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .google {
+      background: #111827;
+    }
+
+    .apple {
+      background: #000000;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      margin: 0 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="logo.png" alt="App Logo">
+    </div>
+
+    <h1>Account Deletion</h1>
+    <p class="subtitle">
+      How to permanently delete your account and all associated data on EQM Truck
+    </p>
+
+    <!-- HOW TO DELETE -->
+    <div class="card">
+      <h2>How to delete your account</h2>
+
+      <div class="step">
+        <div class="step-number">1</div>
+        <div>
+          Open the app and log in to your account.
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div>
+          Go to <strong>Settings</strong> → <strong>Delete Account</strong>.
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div>
+          Confirm the deletion request.
+        </div>
+      </div>
+
+      <p>
+        Once confirmed, <strong>your account and all associated data will be permanently deleted</strong>,
+        including personal information and identity verification images.
+      </p>
+    </div>
+
+    <!-- FORGOT PASSWORD -->
+    <div class="card">
+      <h2>Forgot your password?</h2>
+      <p>
+        If you forgot your password, you can reset it from the app login screen.
+        After resetting your password, log in again and follow the steps above
+        to delete your account.
+      </p>
+    </div>
+
+    <!-- STORE BUTTONS -->
+    <div class="buttons">
+      <a href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME"
+         class="store-btn google">
+        Google Play
+      </a>
+
+      <a href="https://apps.apple.com/app/idYOUR_APP_ID"
+         class="store-btn apple">
+        App Store
+      </a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms and Conditions</a> 
+      </p>
+      <p>
+        All Rights Reserved © 2026 EQM Truck
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>
